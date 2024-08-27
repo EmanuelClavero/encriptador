@@ -8,22 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
-        <h1>Encriptador de Texto</h1>
-    </header>
-    <section class="texto1">
-        <textarea name="texto1" id="texto1">Escriba su texto a encriptar</textarea>
-        <button>ENCRIPTAR</button>
-        <button>DESENCRIPTAR</button>
-        <img src="/img/informacion.png" alt="icono de informacion">
-        <p>No se aceptarán mayúsculas ni caracteres especiales</p>
-    </section>
-    <section class="texto2">
-        <div class="textoEncriptado">
-            <p>No se encontró ningún texto a encriptar</p>
-            <button>COPIAR</button>
+  <header>
+    <a href="#">
+        <img src="/img/logo.png" alt="logo" class="logo">
+    </a>
+  </header>
+
+  <main>
+    <h1>Encriptador de Texto</h1>
+    <section class="encriptador">
+        <textarea class="encriptar" placeholder="Ingrese el texto a encriptar"></textarea>
+        <div class="encriptador-aviso">
+            <img src="/img/informacion.png" alt="info" class="img-aviso">
+            <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="encriptador-contenedor">
+            <button type="submit" class="btn-encriptar">Encriptar</button>
+            <button type="submit" class="btn-desencriptar">Desencriptar</button>
         </div>
     </section>
+    <section class="tarjeta">
+        <div class="tarjeta-contenedor">
+            <img src="/img/robot.png" alt="robot" class="img-muñeco">
+            <p class="textoUno">Ningún mensaje fue encontrado</p>
+            <p class="textoDos">Ingrese el texto que desea encriptar o desencriptar</p>
+        </div>
+        <textarea type="mensaje" class="evaluar" readonly></textarea>
+        <button type="submit" class="btn-copiar">Copiar</button>
+    </section>
+  </main>
     <footer>
         <p>&copy; 2024 Emanuel Clavero. Todos los derechos reservados.</p>
     </footer>
