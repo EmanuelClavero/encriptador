@@ -24,9 +24,15 @@
     background: var(--Dark-Blue);
     color: var(--White);
 }
-body{
-    height: 100%;
+
+
+h1{
+    text-align: center;
+    margin-top: 55px;
+    font-family: sans-serif;
+
 }
+
 
 img{
     max-width: 100%;
@@ -47,12 +53,18 @@ header .logo{
 main{
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
 .encriptador{
     width: 60%;
-    margin: 168px 0px 0px 140px;
+    margin: 55px 0px 0px 140px;
     background: transparent;
 }
 
@@ -80,6 +92,7 @@ main{
     gap: 8px;
     position: absolute;
     top: 460px;
+    
 }
 
 .texto-aviso{
@@ -90,10 +103,12 @@ main{
     line-height: 150%;
     opacity: 0.8;
     color: var(--Medium-Gray);
+    
 }
 
 .img-aviso{
     width: 30px;
+    
     
 }
 
@@ -121,6 +136,7 @@ main{
     border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--RGBA);
+    
 }
 
 .btn-encriptar:active{
@@ -143,6 +159,7 @@ main{
     border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--RGBA);
+   
 }
 
 .btn-desencriptar:active{
@@ -156,6 +173,7 @@ main{
     background: var(--Font);
     box-shadow: 10px 24px 32px -8px var(--Greey);
     position: relative;
+    margin-right: 35px;
     margin-top: 40px;
     border-radius: 30px;
     text-align: center;
@@ -248,36 +266,4 @@ footer{
     font-size: 20px;
     font-weight: 700;
     color: var(--Gree);
-}
-
-@media(max-width: 1250px){
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .encriptador{
-        margin: 168px 0px 0px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .encriptador-contenedor{
-        display: flex;
-        align-items: center;
-        position: inherit;
-    }
-    .encriptador-aviso{
-        position: inherit;
-        margin: 15px;
-    }
-    .tarjeta{
-        width: 665px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
 }
